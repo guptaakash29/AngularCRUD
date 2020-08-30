@@ -1,0 +1,18 @@
+<div class="container">
+<div class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li>
+      <a routerLink="list">List</a>
+    </li>
+    <li>
+      <a routerLink="edit/0">Create</a>
+    </li>
+    <li>
+      <a routerLink="orderSummary">Order Summary</a>
+    </li>
+  </ul>
+</div>
+<!-- Bind to showLoadingIndicator property in the component class -->
+<div class="lds-roller" *ngIf="showLoadingIndicator"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+<router-outlet></router-outlet>
+</div>
